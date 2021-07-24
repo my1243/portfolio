@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #88ddf8 , #ad15fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.glass1,.glass2{
+    min-height: 80vh;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    box-shadow: 10px 10px #ac15fd6c;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+.glass1{
+    width: 40vh;
+    padding: 10px;
+    text-align: center; 
+}
+
+.glass2{
+    width: 140vh;
+    margin: 5vh;
+    transition: all 0.3s ease;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.glass1 img{
+    border-radius:50%;
+    height: 100px;
+    margin:15px;
+    background: #ac60db73;
+    border: 2px solid black;
+}
+
+nav{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    padding: 10px;
+    margin: 12px;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+nav a:hover, nav a:active{
+    background: #d799f8;
+    font-weight: bold;
+}
+
+#Home,#About,#Port,#Contact{
+    background: #d799f8;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 5vh;
+    margin: 20px;
+    color: #f65b65;
+}
+h2,h3{
+    font-size: 4vh;
+    margin: 2rem;
+    opacity: 0.6;
+}
+
+#home{
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin: 2rem;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+.skill{
+    display: flex;
+}
+
+.skill .exp{
+    margin: 2rem;
+    width: 50%;
+}
+.skill div{
+    line-height: 27px;
+    font-size: 18px;
+}
+
+.skill .bars{
+    width: 100%;
+    margin: 1rem;
+    margin-left: 100px;
+}
+
+.skill .bars .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skill .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skill .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: crimson;
+}
+
+.skill .html::before{
+    width: 90%;
+}
+.skill .css::before{
+    width: 70%;
+}
+.skill .js::before{
+    width: 40%;
+}
+.skill .c::before{
+    width: 80%;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+.touch{
+    line-height: 30px;
+}
+.con{
+    display: flex;
+    line-height: 20px;
+    margin: 20px;
+}
+.form p{
+    padding: 5px;
+}
+input[type="text"],input[type="email"],textarea,input[type="submit"]{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border:2px solid gray;
+    border: 2px solid black;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    /* background: rgb(0, 0, 0); */
+    color: rgb(0,0,0);
+    border: 2px solid black;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover{
+    background: rgb(219, 99, 243);
+    color: black;
+    border: 2px solid black;
+}
+.width{
+    width: 100%;
+}
+
+#Email:hover,#Location:hover,#name:hover{
+    color: #ad15fd;
+    font-weight: bolder;
+    cursor:default;
+}
+.circle1,.circle2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    background: white;
+    background:linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3)) ;
+    opacity: 0.7;
+}
+
+.circle1{
+    top: 6%;
+    right: 4%;
+}
+
+.circle2{
+    bottom: 6%;
+    left: 2%;
+}

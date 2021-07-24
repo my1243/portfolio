@@ -1,0 +1,74 @@
+.social{
+    position: absolute;
+    bottom: 15%;
+    margin-left:2rem ;
+    text-align: center;
+    width:120vh;
+}
+.social p{
+    text-align: center;
+    line-height: 150%;
+    font-size: 18px;
+    padding: 15px;
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+/*.fa:hover {
+    opacity: 0.7;
+}*/
+
+.fa-facebook {
+    width: 40px;
+    border-radius: 50%;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    width: 40px;
+    border-radius: 50%;
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    width: 40px;
+    border-radius: 50%;
+    background: #bd1484;
+    color: white;
+}
+
+.wrapper {
+    /* margin: 0px; */
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing {
+    width: 41ch;
+    animation: typing 4s steps(46), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
