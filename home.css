@@ -17,7 +17,7 @@ main{
     min-height: 80vh;
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
     border-radius: 2rem;
-    box-shadow: 10px 10px #ac15fd6c;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.7);
     z-index: 2;
     backdrop-filter: blur(10px);
 }
@@ -53,10 +53,8 @@ nav{
 }
 
 nav a{
-    padding: 10px;
-    margin: 12px;
     border-radius: 2rem;
-    text-decoration: none;
+    font-family: inherit;
     color: black;
     cursor: pointer;
 }
@@ -76,6 +74,7 @@ h1{
     margin: 20px;
     color: #f65b65;
 }
+
 h2,h3{
     font-size: 4vh;
     margin: 2rem;
@@ -94,6 +93,11 @@ h2,h3{
     margin: 2rem;
     line-height: 150%;
     font-size: 18px;
+}
+
+.content ul{
+    list-style:disc;
+    margin: 2rem;
 }
 
 .skill{
@@ -127,7 +131,7 @@ h2,h3{
 }
 
 .skill .line{
-    height: 5px;
+    min-height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
@@ -136,7 +140,7 @@ h2,h3{
 .skill .line::before{
     content: "";
     position: absolute;
-    height: 100%;
+    min-height: 100%;
     left: 0px;
     top: 0px;
     background: crimson;
@@ -181,16 +185,17 @@ input[type="text"],input[type="email"],textarea,input[type="submit"]{
 
 input[type="submit"]{
     cursor: pointer;
-    /* background: rgb(0, 0, 0); */
     color: rgb(0,0,0);
     border: 2px solid black;
-    font-weight: bolder;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
 }
 
 input[type="submit"]:hover{
     background: rgb(219, 99, 243);
     color: black;
     border: 2px solid black;
+    font-weight: bolder;
 }
 .width{
     width: 100%;
@@ -198,12 +203,13 @@ input[type="submit"]:hover{
 
 #Email:hover,#Location:hover,#name:hover{
     color: #ad15fd;
-    font-weight: bolder;
+    font-weight: bolder;        
     cursor:default;
 }
+
 .circle1,.circle2{
     width: 150px;
-    height: 150px;
+    min-height: 150px;
     position: absolute;
     border-radius: 50%;
     z-index: 1;
